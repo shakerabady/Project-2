@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="loginstyle.css">
+</head>
+
+<body oncontextmenu="return false"> <!--to disable right click-->
+
+  <div class="body"></div>
+		<div class="grad"></div>
+		<div class="header">
+			<div>Book<span>Store</span></div>
+		</div>
+		<br>
+		<form name="login">
+		<div class="login">
+				<input type="text" placeholder="Please" name="userid"><br>
+				<input type="password" placeholder="LogIn" name="pswrd"><br>
+				<input id="log" type="button" onclick="check(this.form)" value="Login"/>
+		</div>
+
+
+
+</form>
+<!-- <script src="u.js"></script> -->
+
+<script>
+function check(form)
+{
+ 
+ if(form.userid.value =="shaker" && form.pswrd.value == "hala")
+  {
+	window.open('index.html')
+
+	
+  }
+ else
+ {
+   alert("please check your username")
+  }
+  
+}
+</script>
+
+
+</body>
+</html>
